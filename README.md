@@ -1,7 +1,7 @@
 # Run Buddy
 
 ## Purpose
-A website that offers ftness training services.<br>
+A website that offers fitness training services.<br>
 (Faux site for UT Austin Coding Boot Camp)
 
 ##Built With
@@ -11,5 +11,5 @@ A website that offers ftness training services.<br>
 ## Website
 https://phaberle.github.io/run-buddy/
 
-## Contribution 
+## Contribution  
 Made with ❤️ by Paul Haberle
