@@ -13,3 +13,6 @@ https://phaberle.github.io/run-buddy/
 
 ## Contribution  
 Made with ❤️ by Paul Haberle
+
+## ©️2019 Run Buddy, Inc 
+
