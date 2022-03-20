@@ -1,7 +1,7 @@
 # Run Buddy
 
 ## Purpose
-A website that offers ftness training services.
+A website that offers ftness training services.<br>
 (Faux site for UT Austin Coding Boot Camp)
 
 ##Built With
