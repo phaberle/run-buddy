@@ -1,4 +1,4 @@
-# Run Buddy
+# Run Buddy Inc.
 
 ## Purpose
 A website that offers fitness training services.<br>
@@ -11,7 +11,7 @@ A website that offers fitness training services.<br>
 ## Website
 https://phaberle.github.io/run-buddy/
 
-## Contribution 
+## Contribution  
 Made with ❤️ by Paul Haberle
 
 ## ©️2019 Run Buddy, Inc 
