@@ -1,4 +1,4 @@
-* {
+`* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
-}
+}`
 
 header h1 {
     font-weight: bold;
@@ -182,7 +182,7 @@ section {
     padding: 7px 15px;
     font-size: 16px;
     color: var(--secondary-color);
-    width: 100%;
+    width: 95%;
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.75);
@@ -423,7 +423,7 @@ section {
     padding: 7px 15px;
     font-size: 16px;
     color: var(--secondary-color);
-    width: 100%;
+    width: 95%;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 15px;
