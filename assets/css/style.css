@@ -19,11 +19,11 @@ header {
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
-    top: 0; 
+    top: 0;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-position: 80%;
 }
 
@@ -32,13 +32,13 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
     color: #fce138;
-  
+
 }
 
 header nav ul {
@@ -57,7 +57,18 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 
 footer {
@@ -120,7 +131,7 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -137,14 +148,14 @@ section {
 
 .hero-form {
     border: solid 3px #024e76;
-    background-color: rgba(252, 225, 56,0.8);
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     color: #024e76;
     width: 40%;
     margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    
+
 }
 
 .hero-form h3 {
@@ -164,8 +175,15 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
-    border-radius:15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none; /*<--removes default browser border*/
+}
+
 
 .hero-form label {
     margin: 0 5px;
@@ -183,12 +201,15 @@ section {
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    width: 80%;  
     display: flex;
     flex: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child){
+    border-bottom: 1px solid #39a6b2;
 }
 
 
@@ -256,7 +277,7 @@ section {
     align-items: center;
 }
 
-.trainers{
+.trainers {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -265,16 +286,16 @@ section {
 }
 
 .trainer {
-  
+
     margin: 20px;
     background: #024e76;
-    color: #fce138;   
+    color: #fce138;
     flex: 1;
 }
 
 .trainer img {
     width: 100%;
- 
+
 }
 
 .trainer-bio {
@@ -305,7 +326,7 @@ section {
 
 .trainer-bio p {
     font-size: 17px;
-    
+
 }
 
 /* REACH OUT STYLES START */
@@ -313,37 +334,49 @@ section {
     background: #024e76;
 }
 
-.contact-info{
-    display:flex;
+.contact-info {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.contact-info > *{
-    flex:1;
-    margin:15px;
+.contact-info>* {
+    flex: 1;
+    margin: 15px;
 }
 
-.contact-form input, .contact-form textarea{
-    display:block;
+.contact-form input, .contact-form textarea {
+    display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color:#024e76;
-    width:100%;
+    color: #024e76;
+    width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-    border-radius:15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-.contact-form button{
-    width:100%;
-    border:none;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
     background: #fce138;
-    color:#024e76;
+    color: #024e76;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 15px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 .contact h2 {
@@ -351,7 +384,7 @@ section {
 }
 
 .contact-info iframe {
-  
+
     height: 400px;
 }
 
@@ -379,19 +412,19 @@ section {
 /* REACH OUT STYLES END (Breakpoints) */
 
 /*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
-@media screen and (max-width:980px){
-    header h1 a{
+@media screen and (max-width:980px) {
+    header h1 a {
         padding-bottom: 0;
-        justify-content: center;  
-        position: relative;      
+        justify-content: center;
+        position: relative;
     }
 
-    header h1{
-        width:100%;
-        text-align :center;
+    header h1 {
+        width: 100%;
+        text-align: center;
     }
 
-    header nav ul{
+    header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
@@ -406,31 +439,31 @@ section {
         width: 100%;
     }
 
-    .hero-cta, .hero-form{
+    .hero-cta, .hero-form {
         width: 100%;
     }
 
-    .hero-cta{
+    .hero-cta {
         text-align: center;
     }
 
-    .section-title{
-        width:80%;
+    .section-title {
+        width: 80%;
     }
 
-    .trainer{
+    .trainer {
         flex: 0 70%;
     }
 
-    .contact-info iframe{
+    .contact-info iframe {
         flex: 1 100%;
     }
 }
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER*/
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     section {
-      padding: 30px 15px;        
+        padding: 30px 15px;
     }
 
     .step h3 {
@@ -440,30 +473,30 @@ section {
 
     .step-info {
         flex: 2 100%;
-        text-align:center;
+        text-align: center;
         justify-content: center;
     }
 
-    .step-img{
+    .step-img {
         flex: 0 32%;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
     }
 
-    .step-text{
+    .step-text {
         flex: 100%;
     }
 
 }
 
 /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
-@media screen and (max-width: 575px){
-    .hero-form button{
+@media screen and (max-width: 575px) {
+    .hero-form button {
         width: 100%;
     }
 
-    .section-title{
+    .section-title {
         width: 95%;
     }
 
@@ -471,25 +504,24 @@ section {
         width: 100%;
     }
 
-    .trainer{
+    .trainer {
         flex: 0 100%;
     }
 
-    .contact-info{
+    .contact-info {
         text-align: center;
     }
 
-    .contact-info > *{
+    .contact-info>* {
         flex: 0 100%;
     }
 
-    .contact-form{
+    .contact-form {
         order: 3;
     }
 }
 
-.some-class{
-    text-shadow: 5px 10px 15px rgba(0,0,0,0.5);
-    box-shadow: 5px 10px 15px rgba(0,0,0,0,0.25);
+.some-class {
+    text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0, 0.25);
 }
-
